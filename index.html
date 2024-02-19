@@ -98,7 +98,7 @@ function main() {
   {
 
     const objLoader = new THREE.OBJLoader2();
-    objLoader.loadMtl('windmill.mtl', null, (materials) => {
+    objLoader.loadMtl('./windmill.mtl', null, (materials) => {
       objLoader.setMaterials(materials);
       objLoader.load('windmill.obj', (event) => {
         const root = event.detail.loaderRootNode;
